@@ -101,8 +101,10 @@ def nb_train(train_data):
 #######
 def nb_predict(summaries, row):
     probabilities = calculate_class_probabilities(summaries, row)
-    predict = max(probabilities, key=probabilities.get())
+    print(probabilities)
+    predict = max(probabilities, key=probabilities.get)
     return predict
+    return None
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Naive Bayes Classifier")

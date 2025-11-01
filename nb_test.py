@@ -46,3 +46,6 @@ def test_naive_bayes_model():
     model = nb_train(train_data)
 
     assert model != None
+
+if (__name__ == "__main__"):
+    test_naive_bayes_classifier()
