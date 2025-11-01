@@ -39,6 +39,7 @@ def test_naive_bayes_model():
     train_df = pd.read_csv("./data/IRIS.csv")
     train_data = train_df.to_numpy()
 
+
     # Training label preprocessing
     label_id_dict = str_column_to_int(train_data, len(train_data[0])-1)
     
